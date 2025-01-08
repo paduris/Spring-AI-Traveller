@@ -1,0 +1,15 @@
+spring:
+  ai:
+    openai:
+      api-key: ${OPENAI_API_KEY}
+      model: gpt-4
+      embedding-model: text-embedding-3-small
+
+milvus:
+  host: localhost
+  port: 19530
+  collection: travel_data
+  dimension: 1536  # Dimension for OpenAI embeddings
+
+server:
+  port: 8080
